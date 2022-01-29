@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    box-sizing:border-box;
+
+    --a1:#FF0000;
+    --a2:#800080;
+    --a3:#FF00FF;
+    --a4:#008000;
+    --a5:#00FF00;
+    --a6:#808000;
+    --a7:#FFFF00;
+    --a8:#00FFFF;
+    --a9:#1F09E6;
+    --a0:#008080;
+
+
+}
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#212121;
+}
+.contener{
+    width:100%;
+    height:100vh;
+    display:grid;
+    grid-template-columns:repeat(10,1fr);
+    grid-template-rows:repeat(12,1fr);
+    grid-gap: 10px 10px;
+}
+.s{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-transform:capitalize;
+    background:#00f900;
+    padding:10px;
+    border-radius:5px;
+    color:#eee;
+    font-size:40px;
+    font-weight:bold;
+    cursor:pointer;
+    box-shadow: 0px 0px 20px 10px var(--a0);
+    animation: a 3s linear infinite;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+.c1{
+grid-column:1/12;
+}
+.c2{
+    grid-row:2/12;
+    grid-column:1/3
+}
+.c9{
+    grid-column:10/11;
+    grid-row:2/12;
+}
+.c8{
+grid-row:12/12;
+grid-column:1/12;
+}
+.content{
+    display:grid;
+    grid-gap: 10px 10px;
+    grid-row:2/12;
+    grid-column:3/10;
+}
+
+.content div:hover{
+background:crimson;
+}
+
+
+
+
+
+
+@keyframes a{
+
+    0%{
+        box-shadow: 0px 0px 20px 10px var(--a1);
+        box-shadow: 0px 0px 30px 10px var(--a1);
+    }
+    10%{
+        box-shadow: 0px 0px 20px 10px var(--a2);
+        box-shadow: 0px 0px 30px 10px var(--a2);
+    }
+    20%{
+        box-shadow: 0px 0px 20px 10px var(--a3);
+        box-shadow: 0px 0px 30px 10px var(--a3);
+    }
+    30%{
+        box-shadow: 0px 0px 20px 10px var(--a4);
+        box-shadow: 0px 0px 30px 10px var(--a4);
+    }
+    40%{
+        box-shadow: 0px 0px 20px 10px var(--a5);
+        box-shadow: 0px 0px 30px 10px var(--a5);
+    }
+    50%{
+        box-shadow: 0px 0px 20px 10px var(--a6);
+        box-shadow: 0px 0px 30px 10px var(--a6);
+    }
+    60%{
+        box-shadow: 0px 0px 20px 10px var(--a7);
+        box-shadow: 0px 0px 30px 10px var(--a7);
+    }
+    70%{
+        box-shadow: 0px 0px 20px 10px var(--a8);
+        box-shadow: 0px 0px 30px 10px var(--a8);
+    }
+    80%{
+        box-shadow: 0px 0px 20px 10px var(--a9);
+        box-shadow: 0px 0px 30px 10px var(--a9);
+    }
+
+
+}

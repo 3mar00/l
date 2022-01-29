@@ -1,0 +1,24 @@
+body{
+    display:grid;
+    height:100vh;
+    grid-template-columns:33% 33% 33%;
+    grid-template-rows:33% 33% 33%;
+    gap:10px 30px;
+}
+.a1{
+    display:grid;
+    grid-area:a1;
+    grid-column:1/4;
+}
+.a2{
+    grid-area:a2;
+}
+.c{
+    grid-area:c;
+}
+.a3{
+    grid-area:a3;
+}
+.a4{
+    grid-area:a4;
+}
